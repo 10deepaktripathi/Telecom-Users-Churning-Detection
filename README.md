@@ -1,7 +1,9 @@
 # Telecom-Users-Churning-Detection
 
 Below are the 2 main business objective i am trying to solve with this project-
-1st: Predict behavior to retain telco customers. Analyze all relevant customer  data and develop focused customer retention programs. 
+
+1st: Predict behavior to retain telco customers. Analyze all relevant customer data and develop focused customer retention programs. 
+
 2nd: Identify which all attributes are important in deciding if a customer will  leave the service or not
 
 
@@ -12,10 +14,14 @@ use following metrics.
 
 Classification Metrics
 
-• Accuracy. 
+• Accuracy
+
 • Precision 
+
 • Recall 
+
 • F1-Score 
+
 • Confusion Matrix 
 
 Here, only accuracy is not a good matric to verify the performance of the model as data is highly imbalanced.
