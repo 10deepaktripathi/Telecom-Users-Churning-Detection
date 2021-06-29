@@ -35,16 +35,32 @@ I will also use confusion matrix which can give detailed analysis of how model i
 
 
 Summary on what all I did:
+
 • Upon loading the data, I performed few initial checks and found that data was highly imbalanced.
+
 • It contained 5986 rows and 22 columns.
+
 • It did not contain any null values.
+
 • There were 3 numeric and 19 categorical columns.
+
 • Used chi square test to check which all categorical columns are impacting categorical target ‘’Churn”.
+
 • Used Annova test to check which all numerical columns are impacting categorical target ‘’Churn”.
+
 • Used correlation and VIF to verify if there is any collinearity in data
+
 • Tried standard scaling on numeric features and one hot encoding with categorical columns.
+
 • Did a comparative study among multiple models. first with all columns and then with only selected columns (selected after chi square and annova test).
+
 • Did hyperparameter tunning to get the best model possible.
+
 • Tried deep learning model MLP on this data to check how does it perform.
+
 • Eventually used Logistic regression and Gradient boosting to predict the test data and validate its performance.
+
 • Used to embedded technique to get important features. I used Gradient boosting to get the important features
+
+
+Please go through the notebook which is prity self explainaory.
