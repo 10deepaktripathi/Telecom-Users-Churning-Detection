@@ -63,4 +63,4 @@ Summary on what all I did:
 • Used to embedded technique to get important features. I used Gradient boosting to get the important features
 
 
-Please go through the notebook which is prity self explainaory.
+Please go through the notebook which is self explainaory.
