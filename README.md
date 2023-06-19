@@ -1,7 +1,7 @@
 # Customer Churn Prediction
 
 ### Main File
-- [telecom churn.ipynb]: Notebook contains comparitive study about various statistical ways of comingup with importent features a comparitive study among multiple models.
+- [telecom churn.ipynb](./telecom%20churn.ipynb): Notebook contains comparitive study about various statistical ways of comingup with importent features a comparitive study among multiple models.
 
 ## Introduction
 I will develop a classification model which can predict if a customer can leave the service in the future or not. To verify the performance of the model, I will use the following metrics:
