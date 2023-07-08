@@ -58,7 +58,7 @@ In the above figure, TotalCharges seems to be highly correlated with tenure. To 
 ## Model Training
 Now let us train a model first without removing any predictor and see what result we are getting. We will use multiple models and perform a comparative study to select the best model. Before fitting the model, first we will divide the whole data into train and test parts in a 70:30 ratio, respectively. We will apply 5-fold cross-validation on the train part, and eventually, the model with the best cross-validation score will be used to predict the test data and validate its performance on the test data.
 
-Below is the result obtained after fitting models on complete train data without removing any columns. As you can see, logistic regression has performed the best among all.
+Below is the result obtained after fitting models on complete train data without removing any columns. As you can see, logistic regression has performed the best among all with 0.79 F1-Score.
 
 ![Chart](charts/DT.png)
 ![Chart](charts/LR.png)
