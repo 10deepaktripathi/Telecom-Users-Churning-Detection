@@ -12,8 +12,10 @@ Classification Metrics
 
 Here, only accuracy is not a good metric to verify the performance of the model as the data is highly imbalanced. For our case, I think Precision is important, which says among the total predicted for a category what percentage were correct predictions. This is due to the fact that if our model predicts someone will not leave the service and later if that person leaves, then it will be a loss for the company. Recall also seems a good metric which says of the total data available for a certain category, what percentage has returned correctly. This is because if there are many people who will leave the service, but our model is not able to identify them, it will again be a big loss for the company. Since we want precision and recall both to be high, I will check the F1-score as well, which is the harmonic mean of both. I will also use the confusion matrix, which can give detailed analysis of how the model is performing by drawing a comparison between actual and predicted values in the form of a matrix.
 
-### Main File
+# Directory Structure
 - [telecom churn.ipynb](./telecom%20churn.ipynb): Notebook contains comparitive study about various statistical ways of comingup with importent features a comparitive study among multiple models.
+- [charts](./charts): Contains all the charts that were drawn on this project.
+- [Report_on_telecom_customer_churn.pdf](./Report_on_telecom_customer_churn.pdf): A detailed PDF report about this case study
 
 ## Summary of Steps
 
