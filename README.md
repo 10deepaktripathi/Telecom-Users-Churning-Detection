@@ -34,12 +34,16 @@ Here, only accuracy is not a good metric to verify the performance of the model 
 ## Exploratory Data Analysis
 ### EDA on categorical predictor
 First, I have tried analyzing what all categorical columns are contributing to the target variable ‘churn’. Please observe below figure and you will notice the following observations:
+![Chart](charts/category_eda.png)
+
 1. In the very first figure which is gender against churn, gender does not seem to have much impact on target churn. Distribution of male, female for each target type is the same. When churn is No, male female both increase in count whereas when churn is Yes, male, and female both decrease in count. So, gender (male, female) does not seem to be a strong predictor.
 2. Similar pattern we can observe in the 1st figure of the 2nd row, which is PhoneService against target churn. Distribution of male, female for each target is the same.
 3. Rest categorical columns follow a different pattern against target churn for its different values ('Yes', 'No'). So those all seem to be good predictors for the task at hand.
 
 ### EDA on numerical predictor
 Now let’s see how numerical columns are impacting the target ‘churn’. Following are observations of the below figure:
+![Chart](charts/boxplot.png)
+
 - Customers churn when tenure is low.
 - Customers churn when monthly charges are higher.
 - Customers churn when total charges are low.
@@ -47,12 +51,19 @@ For each numerical column, the average value changes for different values of the
 
 ## Collinearity Check
 Now let’s check if we have collinearity in our data. For this, we will first draw correlation among numerical predictors. Below is the result:
+![Chart](charts/colleniarity.png)
+
 In the above figure, TotalCharges seems to be highly correlated with tenure. To be certain if we have collinearity, we will check the variance inflation factor (VIF) score as well. Note that normally if a column has a VIF score greater than 5, then it is considered to be collinear with some other column.
 
 ## Model Training
 Now let us train a model first without removing any predictor and see what result we are getting. We will use multiple models and perform a comparative study to select the best model. Before fitting the model, first we will divide the whole data into train and test parts in a 70:30 ratio, respectively. We will apply 5-fold cross-validation on the train part, and eventually, the model with the best cross-validation score will be used to predict the test data and validate its performance on the test data.
 
 Below is the result obtained after fitting models on complete train data without removing any columns. As you can see, logistic regression has performed the best among all.
+![Chart](charts/DT.png)
+![Chart](charts/LR.png)
+![Chart](charts/RF.png)
+![Chart](charts/GB.png)
+
 
 ## Hyperparameter Tuning
 Now let’s try hyperparameter tuning to get the best possible score. We will use GridSearchCV for this purpose.
